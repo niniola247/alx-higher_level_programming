@@ -33,8 +33,7 @@ void print_python_bytes(PyObject *p)
 	fflush(stdout);
 	printf("[.] bytes object info\n");
 	if (!PyBytes_CheckExact(p))
-	
-
+	{
 		printf("  [ERROR] Invalid Bytes Object\n");
 		return;
 	}
